@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 defineProps<{ msg: string }>()
 
 const count = ref(0)
@@ -28,7 +26,7 @@ const count = ref(0)
       <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
     </p>
   
-    <button type="button" @click="count++">count is: {{ count }}</button>
+    <button class="border-dark-500 border-width-1px p-1 my-2" type="button" @click="count++">count is: {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test hot module replacement.
