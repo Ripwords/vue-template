@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "assets": "pwa-asset-generator public/img/icons/Logo.png public/img/icons"
   },
   "dependencies": {
     "@vueuse/core": "^6.9.1",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@iconify/json": "^1.1.428",
     "@vitejs/plugin-vue": "^1.9.3",
+    "pwa-asset-generator": "^6.1.1",
     "typescript": "^4.4.3",
     "unplugin-auto-import": "^0.4.14",
     "unplugin-icons": "^0.12.18",
