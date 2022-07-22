@@ -5,7 +5,7 @@
     "dev": "vite --open",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "assets": "pwa-asset-generator public/img/icons/Logo.png public/img/icons"
+    "assets": "cd public && pwa-asset-generator Logo.png ./img/icons && cd .."
   },
   "dependencies": {
     "@vueuse/core": "^6.9.1",
@@ -25,6 +25,7 @@
     "vite-plugin-pwa": "^0.11.5",
     "vite-plugin-windicss": "^1.5.1",
     "vue-tsc": "^0.3.0",
-    "windicss": "^3.2.1"
+    "windicss": "^3.2.1",
+    "workbox-window": "^6.5.3"
   }
 }
